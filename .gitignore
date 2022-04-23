@@ -19,3 +19,6 @@ design
 .DS_Store
 .prettierignore
 
+# Parcel
+.parcel-cache
+
