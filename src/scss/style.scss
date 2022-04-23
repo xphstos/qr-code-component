@@ -1,0 +1,52 @@
+@use "sass:color" as *;
+@use "./functions" as *;
+@forward "./variables";
+@forward "./reset";
+
+body {
+  font: 700 1rem / 1.5 "Outfit", sans-serif;
+  background: var(--off-white);
+  color: var(--off-black);
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  padding-block: 2rem;
+}
+
+article {
+  border-radius: 1.25rem;
+  background: var(--white);
+  padding: 1rem;
+  width: min(calc(100vw - 4rem), 20rem);
+  box-shadow: 0 0.5rem 2rem -0.5rem adjust-color(c("off-black"), $alpha: -0.8);
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  border-radius: 0.875rem;
+  aspect-ratio: 1 / 1;
+}
+
+h1,
+p {
+  // padding-inline: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 1.333;
+  margin-block: 2rem 1.25rem;
+}
+
+p {
+  margin: 1.25rem;
+  color: var(--blueish);
+  font-weight: 400;
+}
